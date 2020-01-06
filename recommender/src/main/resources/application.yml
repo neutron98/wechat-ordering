@@ -1,0 +1,34 @@
+admin:
+    email: admin@recommender.cmu
+    encryptPassword: 4QrcOUm6Wau+VuBX8g+IPg==
+mybatis:
+    mapper-locations: classpath:/mapping/*.xml
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        name: recommender
+        password: admin
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/recommender?useUnicode=true&characterEncoding=UTF-8
+        username: root
+    mvc:
+        static-path-pattern: /static/**
+        throw-exception-if-no-handler-found: true
+    resources:
+        add-mappings: true
+        static-locations: classpath:/resources/,classpath:/static/,classpath:/templates/
+
+
+    thymeleaf:
+        cache: false
+        check-template-location: true
+        prefix: classpath:/templates/
+        suffix: .html
+        servlet:
+            content-type: text/html
+
+
+
+
