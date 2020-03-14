@@ -4,4 +4,4 @@ This application has two versions. It was first developed as a Monolithic Applic
 
 See documentations and code below:
 - [Monolithic Application](https://github.com/neutron98/wechat-ordering/tree/master/mart)
-- Microservices Architecture (on progress)
+- [Microservices Architecture](https://github.com/neutron98/wechat-ordering-microservices)
